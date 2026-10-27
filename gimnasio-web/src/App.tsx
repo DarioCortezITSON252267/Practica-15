@@ -4,6 +4,8 @@ import { Layout } from './componentes/Layout.tsx';
 import { NoEncontrado } from './componentes/NoEncontrado.tsx';
 import { PaginaClase } from './paginas/PaginaClase.tsx';
 import { PaginaClases } from './paginas/PaginaClases.tsx';
+import PaginaEntrar from './paginas/PaginaEntrar.tsx';
+import PaginaRegistro from './paginas/PaginaRegistro.tsx';
 
 export function App() {
   return (
@@ -16,6 +18,9 @@ export function App() {
           <Route index element={<PaginaClases />} />
           <Route path=":id" element={<PaginaClase />} />
         </Route>
+
+        <Route path="entrar" element={<PaginaEntrar />} />
+        <Route path="registro" element={<PaginaRegistro />} />
 
         {/* Cualquier otra dirección. Es hija del Layout: por eso también lleva encabezado y pie. */}
         <Route path="*" element={<NoEncontrado />} />
