@@ -22,4 +22,4 @@ En el `localStorage` del navegador (claves `token` y `usuario`), para que la ses
 recargar la página. El riesgo es que cualquier JavaScript que corra en la página puede leerlo:
 si alguien logra meter código (un ataque XSS o una librería maliciosa), puede robar el token y
 hacerse pasar por el usuario hasta que caduque (1 hora). Además se queda guardado aunque se
-cierre el navegador, por ejemplo en una computadora compartida.
+cierre el navegador, por ejemplo en una computadora compartida.....
